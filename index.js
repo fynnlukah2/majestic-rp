@@ -17,7 +17,7 @@
             <div class="staff-member">
                 <h2>Max Mustermann</h2>
                 <p>Rang: Geschäftsführer</p>
-                <p>Discord: Max Mustermann#1234</p>
+                <p>Discord: test</p>
             </div>
 
             <div class="staff-member">
