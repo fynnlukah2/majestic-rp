@@ -31,7 +31,9 @@ h1 {
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none; /* Entfernt die Aufzählungszeichen */
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
@@ -40,15 +42,14 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: white; /* Setzt die Textfarbe auf weiß */
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #555; /* Optional: leichte Farbänderung bei Hover */
 }
 
 main {
