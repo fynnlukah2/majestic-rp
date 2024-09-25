@@ -11,15 +11,45 @@ body {
     line-height: 1.6;
 }
 
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0; /* Mehr Padding für die Höhe */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Links in Weiß */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px; /* Fontgröße angepasst */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Header Styling */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0; /* Mehr Platz für den Header-Text */
 }
 
 h1 {
     margin-bottom: 10px;
+    font-size: 36px; /* Größere Schrift für den Titel */
 }
 
 p {
