@@ -18,12 +18,38 @@ header {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 10px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
-p {
-    font-size: 18px;
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none; /* Entfernt die Aufzählungszeichen */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: white; /* Setzt die Textfarbe auf weiß */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Optional: leichte Farbänderung bei Hover */
 }
 
 main {
@@ -46,16 +72,8 @@ h2 {
     margin-bottom: 15px;
 }
 
-ol, ul {
-    margin-bottom: 20px;
-}
-
-ol li, ul li {
+ol li {
     margin-bottom: 10px;
-}
-
-strong {
-    color: #007bff;
 }
 
 footer {
@@ -63,7 +81,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
