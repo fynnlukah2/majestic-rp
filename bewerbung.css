@@ -48,8 +48,9 @@ nav ul li a {
     border-radius: 5px;
 }
 
-nav ul li a:visited {
-    color: white; /* Stellt sicher, dass besuchte Links weiß bleiben */
+nav ul li a:visited,
+nav ul li a:active {
+    color: white; /* Stellt sicher, dass besuchte und aktive Links weiß bleiben */
 }
 
 nav ul li a:hover {
