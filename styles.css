@@ -9,6 +9,9 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    min-height: 100vh; /* sorgt dafür, dass der Body die gesamte Höhe der Ansicht einnimmt */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -31,7 +34,7 @@ h1 {
 }
 
 nav ul {
-    list-style-type: none; /* Entfernt die Aufzählungszeichen */
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -42,28 +45,28 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    color: white; /* Setzt die Textfarbe auf weiß */
+    text-decoration: none;
+    color: white;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Optional: leichte Farbänderung bei Hover */
+    background-color: #555;
 }
 
 main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
+    flex: 1 0 auto; /* ermöglicht es, dass der Main-Bereich den Rest des verfügbaren Platzes einnimmt */
 }
 
 .leitungsebene {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    max-height: 400px; /* Höhe des Bereichs begrenzen */
-    overflow-y: scroll; /* Scrollen im Bereich aktivieren */
+    max-height: 400px; /* feste Höhe des Bereichs */
+    overflow-y: auto; /* Scrollen bei Überlauf aktivieren */
     padding: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
@@ -90,6 +93,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative; /* Position auf relative geändert, um Scrollen zu ermöglichen */
+    flex-shrink: 0; /* hält den Footer unten */
     width: 100%;
 }
